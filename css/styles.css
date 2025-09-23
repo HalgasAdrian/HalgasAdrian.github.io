@@ -130,7 +130,21 @@ body.site {
 
 .resume__item { margin-top: 1rem; }
 
-.resume__itemHead { display: grid; gap: 0.25rem; }
+ /* Use flex layout in resume headers to align logos and text */
+ .resume__itemHead {
+   display: flex;
+   gap: 0.75rem;
+   align-items: flex-start;
+ }
+
+ /* Logo styling for organization/company images in resume */
+ .resume__logo {
+   width: 36px;
+   height: 36px;
+   object-fit: contain;
+   flex-shrink: 0;
+   border-radius: 0.25rem;
+ }
 
 .resume__role { margin: 0; }
 
