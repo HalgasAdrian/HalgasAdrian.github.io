@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Adrian Halgas" />
+    <meta name="description" content="Resume for Adrian Halgas." />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Adrian Halgas — Resume</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="site">
+    <header class="site__header container">
+      <a class="brand" href="/">Adrian Halgas<span class="brand__dot"></span></a>
+      <nav aria-label="Primary" class="nav">
+        <a class="nav__link" href="/">Home</a>
+        <a class="nav__link" href="/projects.html">Projects</a>
+        <a class="nav__link is-active" href="/resume.html">Resume</a>
+        <button class="button button--ghost" id="theme-toggle" type="button" aria-label="Toggle theme">🌓</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Resume</h1>
+
+      <div class="cta" style="margin-bottom:1rem;">
+        <a
+          class="button"
+          href="./assets/AdrianHalgasResume2026.pdf"
+          download="AdrianHalgasResume2026.pdf"
+          aria-label="Download resume as PDF"
+          >⬇️ Download Resume (PDF)</a
+        >
+        <a
+          class="button button--secondary"
+          href="./assets/AdrianHalgasResume2026.pdf"
+          target="_blank"
+          rel="noopener"
+          >Open in new tab</a
+        >
+      </div>
+
+      <!-- Inline PDF viewer -->
+      <iframe
+        class="pdf-frame"
+        src="./assets/AdrianHalgasResume2026.pdf#view=FitH"
+        title="Embedded resume PDF"
+      ></iframe>
+
+      <p class="muted" style="margin-top:.75rem;">
+        If the PDF doesn’t render in your browser, use the buttons above to open or download it.
+      </p>
+    </main>
+
+    <footer class="site__footer container">
+      <small>© <span id="year"></span> Adrian Halgas • <a href="LICENSE">MIT License</a></small>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
