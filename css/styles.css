@@ -197,7 +197,7 @@ body.site {
   border-radius: 999px;
 }
 
-/* Optional link accent inside resume content */
+/* Link accent inside resume content */
 .resume__link {
   color: var(--accent);
   text-decoration: none;
