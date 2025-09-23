@@ -75,3 +75,99 @@ body.site {
 .card__title { margin: 0 0 .25rem; }
 .card__desc { margin: 0; color: var(--muted); }
 .accent { color: var(--accent); }
+
+/* Utility */
+.muted { color: var(--muted); }
+
+/* ===========================
+   Resume page styles
+   =========================== */
+
+.resume__toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+
+.resume__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 2rem;
+  align-items: start;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--card);
+}
+
+.resume__contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.75rem 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.resume__contact a { text-decoration: none; color: var(--fg); }
+.resume__contact a:hover { text-decoration: underline; }
+
+.resume__section { margin-top: 2rem; }
+.resume__section > h2 {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.35rem;
+}
+
+.resume__item { margin-top: 1rem; }
+
+.resume__itemHead { display: grid; gap: 0.25rem; }
+
+.resume__role { margin: 0; }
+
+.resume__meta {
+  display: inline-flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.resume__org, .resume__location { font-weight: 500; }
+
+.resume__bullets { margin: 0.5rem 0 0; padding-left: 1.1rem; }
+.resume__bullets li { margin: 0.25rem 0; }
+
+.chips {
+  list-style: none;
+  margin: 0.25rem 0 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.chip {
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+/* Optional link accent inside resume content */
+.resume__link {
+  color: var(--accent);
+  text-decoration: none;
+}
+.resume__link:hover { text-decoration: underline; }
+
+/* Small screens */
+@media (max-width: 720px) {
+  .resume__header { grid-template-columns: 1fr; }
+  .resume__contact { justify-content: flex-start; }
+}
+
+/* Print-friendly */
+@media print {
+  .site__header, .site__footer, #theme-toggle, .resume__toolbar { display: none; }
+  body { background: #ffffff; color: #000000; }
+  .resume__header, .resume__section { break-inside: avoid; page-break-inside: avoid; }
+}

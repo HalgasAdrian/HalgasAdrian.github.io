@@ -20,36 +20,139 @@
       </nav>
     </header>
 
-    <main class="container">
-      <h1>Resume</h1>
-
-      <div class="cta" style="margin-bottom:1rem;">
+    <main class="container resume">
+      <!-- Toolbar with a dedicated download button -->
+      <div class="resume__toolbar">
         <a
           class="button"
           href="./assets/AdrianHalgasResume2026.pdf"
           download="AdrianHalgasResume2026.pdf"
           aria-label="Download resume as PDF"
-          >⬇️ Download Resume (PDF)</a
         >
-        <a
-          class="button button--secondary"
-          href="./assets/AdrianHalgasResume2026.pdf"
-          target="_blank"
-          rel="noopener"
-          >Open in new tab</a
-        >
+          ⬇️ Download Resume (PDF)
+        </a>
       </div>
 
-      <!-- Inline PDF viewer -->
-      <iframe
-        class="pdf-frame"
-        src="./assets/AdrianHalgasResume2026.pdf#view=FitH"
-        title="Embedded resume PDF"
-      ></iframe>
+      <!-- Top header block with name & contact -->
+      <section class="resume__header" aria-labelledby="resume-title">
+        <div>
+          <h1 id="resume-title">Adrian Halgas</h1>
+          <p class="muted">Software Engineer • Front-end & ML-adjacent</p>
+        </div>
+        <ul class="resume__contact">
+          <li><a href="mailto:adrian@example.com">adrian@example.com</a></li>
+          <li><a href="https://example.com" target="_blank" rel="noopener">example.com</a></li>
+          <li><a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </section>
 
-      <p class="muted" style="margin-top:.75rem;">
-        If the PDF doesn’t render in your browser, use the buttons above to open or download it.
-      </p>
+      <!-- Summary -->
+      <section class="resume__section" aria-labelledby="summary">
+        <h2 id="summary">Summary</h2>
+        <p>
+          Engineer focused on accessible, performant web apps. Experience with vanilla HTML/CSS/ES6, modern tooling,
+          and data-driven features. Comfortable moving from UX mockups to production-ready UI.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section class="resume__section" aria-labelledby="skills">
+        <h2 id="skills">Skills</h2>
+        <ul class="chips" aria-label="Skills">
+          <li class="chip">HTML5</li>
+          <li class="chip">CSS3 (Grid/Flexbox)</li>
+          <li class="chip">ES6 Modules</li>
+          <li class="chip">Accessibility (a11y)</li>
+          <li class="chip">Git/GitHub</li>
+          <li class="chip">Prettier / ESLint</li>
+        </ul>
+      </section>
+
+      <!-- Education -->
+      <section class="resume__section" aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <article class="resume__item">
+          <header class="resume__itemHead">
+            <h3 class="resume__role">B.S. in Computer Science</h3>
+            <div class="resume__meta">
+              <span class="resume__org">Your University</span>
+              <span aria-hidden="true">•</span>
+              <span class="resume__location">City, ST</span>
+              <span aria-hidden="true">•</span>
+              <time datetime="2022-09">Sep 2022</time>—<time datetime="2026-05">May 2026</time>
+            </div>
+          </header>
+          <ul class="resume__bullets">
+            <li>Relevant coursework: Web Dev, NLP, Cloud Computing, Data Structures.</li>
+            <li>Clubs/Activities: ACM, Hackathon Team Lead.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Experience -->
+      <section class="resume__section" aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+
+        <article class="resume__item">
+          <header class="resume__itemHead">
+            <h3 class="resume__role">Front-End Engineer Intern</h3>
+            <div class="resume__meta">
+              <span class="resume__org">Company Name</span>
+              <span aria-hidden="true">•</span>
+              <span class="resume__location">City, ST</span>
+              <span aria-hidden="true">•</span>
+              <time datetime="2025-06">Jun 2025</time>—<time datetime="2025-08">Aug 2025</time>
+            </div>
+          </header>
+          <ul class="resume__bullets">
+            <li>Built accessible components with semantic HTML and ARIA for a public marketing site.</li>
+            <li>Refactored CSS to Grid/Flexbox, cutting layout code by 30% and improving CLS.</li>
+            <li>Integrated ESLint/Prettier and CI checks; reduced PR style issues to near zero.</li>
+          </ul>
+        </article>
+
+        <article class="resume__item">
+          <header class="resume__itemHead">
+            <h3 class="resume__role">Undergraduate Research Assistant</h3>
+            <div class="resume__meta">
+              <span class="resume__org">Your Lab</span>
+              <span aria-hidden="true">•</span>
+              <span class="resume__location">City, ST</span>
+              <span aria-hidden="true">•</span>
+              <time datetime="2024-09">Sep 2024</time>—<time datetime="2025-05">May 2025</time>
+            </div>
+          </header>
+          <ul class="resume__bullets">
+            <li>Implemented a text-classification baseline (20 Newsgroups + GloVe) in ES6+ tooling.</li>
+            <li>Analyzed feature importance; presented findings in weekly lab meetings.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Projects -->
+      <section class="resume__section" aria-labelledby="projects">
+        <h2 id="projects">Selected Projects</h2>
+        <article class="resume__item">
+          <header class="resume__itemHead">
+            <h3 class="resume__role">Portfolio v2</h3>
+            <div class="resume__meta">
+              <a class="resume__link" href="/projects.html">See all projects</a>
+            </div>
+          </header>
+          <ul class="resume__bullets">
+            <li>Vanilla HTML/CSS/ES6 site with dark/light/auto theme and a tag filter component.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Awards / Certs (optional) -->
+      <section class="resume__section" aria-labelledby="awards">
+        <h2 id="awards">Awards & Certifications</h2>
+        <ul class="resume__bullets">
+          <li>AWS Academy Cloud Architecting — Capstone project (HA PHP app on AWS).</li>
+        </ul>
+      </section>
     </main>
 
     <footer class="site__footer container">
