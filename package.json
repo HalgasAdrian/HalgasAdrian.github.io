@@ -1,0 +1,18 @@
+{
+  "name": "project-1-homepage",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve -l 5173 .",
+    "format": "prettier --write .",
+    "lint": "eslint . --max-warnings=0",
+    "validate:html": "npx html-validate \"**/*.html\""
+  },
+  "devDependencies": {
+    "eslint": "^9.10.0",
+    "prettier": "^3.3.3",
+    "html-validate": "^9.7.0",
+    "serve": "^14.2.3"
+  }
+}

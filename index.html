@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Required meta -->
+    <meta name="author" content="Your Name" />
+    <meta name="description" content="Personal homepage of Your Name — projects, resume, and contact." />
+    <link rel="icon" href="/favicon.ico" />
+
+    <title>Your Name — Home</title>
+    <link rel="preload" href="./css/styles.css" as="style" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="site">
+    <header class="site__header container">
+      <a class="brand" href="/">YourName<span class="brand__dot">.</span></a>
+      <nav aria-label="Primary" class="nav">
+        <a class="nav__link" href="/">Home</a>
+        <a class="nav__link" href="/projects.html">Projects</a>
+        <button class="button button--ghost" id="theme-toggle" type="button" aria-label="Toggle theme">
+          🌓
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <img class="hero__avatar" src="./img/avatar.png" alt="Portrait of Your Name" />
+        <div>
+          <h1>Hello, I’m <span class="accent">Your Name</span></h1>
+          <p class="lead">
+            I’m a software engineer who enjoys building clean UIs and ML-powered tools.
+          </p>
+          <div class="cta">
+            <a class="button" href="/projects.html">See my projects</a>
+            <a class="button button--secondary" href="mailto:you@example.com">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Original component example: interactive tag filter (no library) -->
+      <section class="section">
+        <h2>Featured projects</h2>
+        <div class="tags" role="tablist" aria-label="Project filters">
+          <button class="tag is-active" data-tag="all" role="tab" aria-selected="true">All</button>
+          <button class="tag" data-tag="web" role="tab" aria-selected="false">Web</button>
+          <button class="tag" data-tag="ml" role="tab" aria-selected="false">ML</button>
+          <button class="tag" data-tag="systems" role="tab" aria-selected="false">Systems</button>
+        </div>
+
+        <ul class="grid projects" id="project-grid">
+          <li class="card" data-tags="web">
+            <a class="card__link" href="#">
+              <h3 class="card__title">Portfolio v2</h3>
+              <p class="card__desc">A11y-focused site with CSS Grid and dark mode.</p>
+            </a>
+          </li>
+          <li class="card" data-tags="ml web">
+            <a class="card__link" href="#">
+              <h3 class="card__title">News Classifier</h3>
+              <p class="card__desc">20NG + GloVe; feedforward baseline with analysis.</p>
+            </a>
+          </li>
+          <li class="card" data-tags="systems">
+            <a class="card__link" href="#">
+              <h3 class="card__title">Cache Sim</h3>
+              <p class="card__desc">Interactive cache visualization in the browser.</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site__footer container">
+      <small>© <span id="year"></span> Your Name • <a href="LICENSE">MIT License</a></small>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
