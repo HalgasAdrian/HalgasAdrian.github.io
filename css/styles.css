@@ -197,12 +197,30 @@ body.site {
   border-radius: 999px;
 }
 
-/* Link accent inside resume content */
+/* Optional link accent inside resume content */
 .resume__link {
   color: var(--accent);
   text-decoration: none;
 }
 .resume__link:hover { text-decoration: underline; }
+
+/*
+ * Project card expansion styles
+ * The .project-card class is applied to project cards on the projects page. Clicking a card toggles the .expanded class.
+ */
+.project-card {
+  cursor: pointer;
+}
+
+.project-card .project-details {
+  display: none;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.project-card.expanded .project-details {
+  display: block;
+}
 
 /* Small screens */
 @media (max-width: 720px) {
