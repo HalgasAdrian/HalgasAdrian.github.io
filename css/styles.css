@@ -18,6 +18,28 @@
   }
 }
 
+/*
+ * Support explicit light/dark modes via the data-theme attribute on <html>.
+ * The default (no data-theme attribute or "auto") will defer to system preferences.
+ */
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --fg: #0b1220;
+  --muted: #516078;
+  --accent: #0a84ff;
+  --card: #f4f7fb;
+  --border: #dbe2ef;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b0c0f;
+  --fg: #e9eef5;
+  --muted: #a9b2c0;
+  --accent: #8ec5ff;
+  --card: #151821;
+  --border: #262b36;
+}
+
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body.site {

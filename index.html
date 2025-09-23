@@ -47,28 +47,51 @@
         <h2>Featured projects</h2>
         <div class="tags" role="tablist" aria-label="Project filters">
           <button class="tag is-active" data-tag="all" role="tab" aria-selected="true">All</button>
-          <button class="tag" data-tag="web" role="tab" aria-selected="false">Web</button>
-          <button class="tag" data-tag="ml" role="tab" aria-selected="false">ML</button>
-          <button class="tag" data-tag="systems" role="tab" aria-selected="false">Systems</button>
+          <button class="tag" data-tag="ml" role="tab" aria-selected="false">Machine Learning</button>
+          <button class="tag" data-tag="apps" role="tab" aria-selected="false">Applications</button>
+          <button class="tag" data-tag="elec" role="tab" aria-selected="false">Electrical</button>
         </div>
 
         <ul class="grid projects" id="project-grid">
-          <li class="card" data-tags="web">
+          <!-- Machine Learning projects -->
+          <li class="card" data-tags="ml">
             <a class="card__link" href="#">
-              <h3 class="card__title">Portfolio v2</h3>
-              <p class="card__desc">A11y-focused site with CSS Grid and dark mode.</p>
+              <h3 class="card__title">LLMs for Automatic Hardware Testbench Generation</h3>
+              <p class="card__desc">A machine learning project exploring how large language models can automate the generation of hardware testbenches.</p>
             </a>
           </li>
-          <li class="card" data-tags="ml web">
+          <li class="card" data-tags="ml">
             <a class="card__link" href="#">
-              <h3 class="card__title">News Classifier</h3>
-              <p class="card__desc">20NG + GloVe; feedforward baseline with analysis.</p>
+              <h3 class="card__title">Adaptive Crowd Management AI</h3>
+              <p class="card__desc">An AI system designed to dynamically manage crowd flow and safety using real‑time data.</p>
             </a>
           </li>
-          <li class="card" data-tags="systems">
+
+          <!-- Applications projects -->
+          <li class="card" data-tags="apps">
             <a class="card__link" href="#">
-              <h3 class="card__title">Cache Sim</h3>
-              <p class="card__desc">Interactive cache visualization in the browser.</p>
+              <h3 class="card__title">Clinic Management System</h3>
+              <p class="card__desc">A web application to streamline clinic operations, scheduling, and patient records.</p>
+            </a>
+          </li>
+          <li class="card" data-tags="apps">
+            <a class="card__link" href="#">
+              <h3 class="card__title">Personal Homepage</h3>
+              <p class="card__desc">This project—the personal homepage itself—built with vanilla HTML, CSS, and ES6 modules.</p>
+            </a>
+          </li>
+
+          <!-- Electrical projects -->
+          <li class="card" data-tags="elec">
+            <a class="card__link" href="#">
+              <h3 class="card__title">Robotic Grasping Mechanism Capstone</h3>
+              <p class="card__desc">A hardware project developing a robotic hand mechanism with precise grasping capability.</p>
+            </a>
+          </li>
+          <li class="card" data-tags="elec">
+            <a class="card__link" href="#">
+              <h3 class="card__title">NASA Moog Gimbal</h3>
+              <p class="card__desc">An engineering project involving the design and control of a gimbal system for aerospace applications.</p>
             </a>
           </li>
         </ul>
