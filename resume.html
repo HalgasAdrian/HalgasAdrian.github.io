@@ -50,9 +50,9 @@
       <section class="resume__section" aria-labelledby="summary">
         <h2 id="summary">Summary</h2>
         <p>
-          I'm Adrian Halgas, a Computer Science graduate student at Northeastern University. I am passionate about aerospace, robotics, machine learning and AI, 
-          I'm fascinated by everything from Boeings's 777-9 test flights to how large language models can help us develop hardware testbenches automatically. I'm 
-          on track to complete my master's degree in December 2025, along the way I've earned AWS Cloud Architecting and Cloud Foundations certifications.
+          I'm Adrian Halgas, a Computer Science graduate student at Northeastern University. I am passionate about aerospace, robotics, machine learning and AI.
+          I'm fascinated by everything from Boeing's 777-9 test flights to how large language models can help us develop hardware testbenches automatically. I'm
+          on track to complete my master's degree in December 2025; along the way I've earned AWS Cloud Architecting and Cloud Foundations certifications.
           Whether building smarter robots, exploring AI, or dreaming up ways to power the skies, I combine hard work with curiosity and a dash of fun to push the boundaries of what's possible.
         </p>
       </section>
@@ -85,20 +85,44 @@
       <!-- Education -->
       <section class="resume__section" aria-labelledby="education">
         <h2 id="education">Education</h2>
-        <article class="resume__item">
+
+        <!-- Graduate -->
+        <h3 class="resume__subheading" id="graduate">Graduate</h3>
+        <article class="resume__item" aria-labelledby="grad-degree">
           <header class="resume__itemHead">
-            <h3 class="resume__role">B.S. in Computer Science</h3>
+            <h4 class="resume__role" id="grad-degree">M.S. in Computer Science</h4>
             <div class="resume__meta">
-              <span class="resume__org">Your University</span>
+              <span class="resume__org">Northeastern University</span>
               <span aria-hidden="true">•</span>
-              <span class="resume__location">City, ST</span>
+              <span class="resume__location">Boston, MA</span>
               <span aria-hidden="true">•</span>
-              <time datetime="2022-09">Sep 2022</time>—<time datetime="2026-05">May 2026</time>
+              <time datetime="2025-12">Expected Dec 2025</time>
             </div>
           </header>
           <ul class="resume__bullets">
-            <li>Relevant coursework: Web Dev, NLP, Cloud Computing, Data Structures.</li>
-            <li>Clubs/Activities: ACM, Hackathon Team Lead.</li>
+            <li>Focus areas: Machine Learning, Algorithms.</li>
+            <li>Relevant coursework: Machine Learning, Algorithms, Natural Language Processing, Cloud Computing.</li>
+            <li>GPA 3.67</li>
+          </ul>
+        </article>
+
+        <!-- Undergraduate -->
+        <h3 class="resume__subheading" id="undergraduate">Undergraduate</h3>
+        <article class="resume__item" aria-labelledby="ug-degree">
+          <header class="resume__itemHead">
+            <h4 class="resume__role" id="ug-degree">B.S. in Electrical Engineering</h4>
+            <div class="resume__meta">
+              <span class="resume__org">Cleveland State University</span>
+              <span aria-hidden="true">•</span>
+              <span class="resume__location">Cleveland, OH</span>
+              <span aria-hidden="true">•</span>
+              <time datetime="2022-09">Sep 2019</time>—<time datetime="2026-05">Dec 2023</time>
+            </div>
+          </header>
+          <ul class="resume__bullets">
+            <li>Relevant coursework: Machine Learning, Data Science, Control Systems, Electronics.</li>
+            <li>Clubs/Activities: Robotics Club.</li>
+            <li>GPA 3.12</li>
           </ul>
         </article>
       </section>
@@ -109,23 +133,42 @@
 
         <article class="resume__item">
           <header class="resume__itemHead">
-            <h3 class="resume__role">Front-End Engineer Intern</h3>
+            <h3 class="resume__role">Electronic Systems Design and Analysis Engineer</h3>
             <div class="resume__meta">
-              <span class="resume__org">Company Name</span>
+              <span class="resume__org">Boeing</span>
               <span aria-hidden="true">•</span>
-              <span class="resume__location">City, ST</span>
+              <span class="resume__location">Everett, WA</span>
               <span aria-hidden="true">•</span>
-              <time datetime="2025-06">Jun 2025</time>—<time datetime="2025-08">Aug 2025</time>
+              <time datetime="2025-06">Oct 2025</time>—<time datetime="2025-08">Present</time>
             </div>
           </header>
           <ul class="resume__bullets">
-            <li>Built accessible components with semantic HTML and ARIA for a public marketing site.</li>
-            <li>Refactored CSS to Grid/Flexbox, cutting layout code by 30% and improving CLS.</li>
-            <li>Integrated ESLint/Prettier and CI checks; reduced PR style issues to near zero.</li>
+            <li>787/777 Interiors Systems Engineering.</li>
           </ul>
         </article>
 
         <article class="resume__item">
+          <header class="resume__itemHead">
+            <h3 class="resume__role">Engineer II</h3>
+            <div class="resume__meta">
+              <span class="resume__org">FirstEnergy</span>
+              <span aria-hidden="true">•</span>
+              <span class="resume__location">Akron, OH</span>
+              <span aria-hidden="true">•</span>
+              <time datetime="2024-09">Jan 2024</time>—<time datetime="2025-05">Sept 2024</time>
+            </div>
+          </header>
+          <ul class="resume__bullets">
+            <li>Created electrical layouts for high-voltage substations, including bus configuration, and interconnections.</li>
+            <li>Utilized design software such as AutoCAD in order to develop single-line, three-line diagrams, and wiring diagrams.</li>
+            <li>Conducted load flow, short circuit analysis, voltage drop calculations to ensure the reliability of substation designs.</li>
+            <li>Performed site surveys to gather data and assess the feasibility of substation projects, along with inspecting existing substation equipment to identify areas for improvement or necessary upgrades.</li>
+            <li>Developed project schedules and timelines to ensure timely completion of substation projects.</li>
+          </ul>
+        </article>
+      </section>
+
+      <article class="resume__item">
           <header class="resume__itemHead">
             <h3 class="resume__role">Undergraduate Research Assistant</h3>
             <div class="resume__meta">
@@ -139,22 +182,6 @@
           <ul class="resume__bullets">
             <li>Implemented a text-classification baseline (20 Newsgroups + GloVe) in ES6+ tooling.</li>
             <li>Analyzed feature importance; presented findings in weekly lab meetings.</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- Projects -->
-      <section class="resume__section" aria-labelledby="projects">
-        <h2 id="projects">Selected Projects</h2>
-        <article class="resume__item">
-          <header class="resume__itemHead">
-            <h3 class="resume__role">Portfolio v2</h3>
-            <div class="resume__meta">
-              <a class="resume__link" href="/projects.html">See all projects</a>
-            </div>
-          </header>
-          <ul class="resume__bullets">
-            <li>Vanilla HTML/CSS/ES6 site with dark/light/auto theme and a tag filter component.</li>
           </ul>
         </article>
       </section>

@@ -119,6 +119,15 @@ body.site {
   padding-bottom: 0.35rem;
 }
 
+/* NEW: subheadings for Graduate/Undergraduate */
+.resume__subheading {
+  margin-top: 1.25rem;
+  font-size: 1.05rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
 .resume__item { margin-top: 1rem; }
 
 .resume__itemHead { display: grid; gap: 0.25rem; }
