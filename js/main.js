@@ -44,8 +44,17 @@ function initProjectExpand() {
     card.addEventListener('click', (event) => {
       // Prevent toggling when clicking links inside the card
       if (event.target && event.target.closest('a')) return;
-      const expanded = card.classList.toggle('expanded');
-      card.setAttribute('aria-expanded', expanded);
+      // Collapse all other cards first so only one card is expanded at a time
+      cards.forEach((c) => {
+        if (c !== card) {
+          c.classList.remove('expanded');
+          c.setAttribute('aria-expanded', 'false');
+        }
+      });
+      // Toggle the clicked card's expanded state
+      const shouldExpand = !card.classList.contains('expanded');
+      card.classList.toggle('expanded', shouldExpand);
+      card.setAttribute('aria-expanded', shouldExpand);
     });
   });
 
@@ -54,6 +63,11 @@ function initProjectExpand() {
     const id = window.location.hash.slice(1);
     const target = document.getElementById(id);
     if (target && target.classList.contains('project-card')) {
+      // Collapse all cards first
+      cards.forEach((c) => {
+        c.classList.remove('expanded');
+        c.setAttribute('aria-expanded', 'false');
+      });
       target.classList.add('expanded');
       target.setAttribute('aria-expanded', 'true');
       // Scroll into view after a short delay to ensure layout is ready
