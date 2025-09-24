@@ -53,7 +53,7 @@ Design mockups help visualise layout and hierarchy before implementation. Below 
 
 - **Home page** with a header, a hero section (avatar on the left, introduction text on the right), call‑to‑action buttons (Projects, Contact, GitHub) and a featured projects section with category filter buttons and project cards.
 - **Projects page** with category headings (Machine Learning, Applications, Electrical), a responsive grid of project cards, and an expanded card spanning the full width with an image, long description, objectives, and technical approach.
-- **Résumé page** with clear sections (Summary, Skills chips, Education with logos, Experience entries, Projects, Awards) and a top toolbar with a download button.
+- **Resume page** with clear sections (Summary, Skills chips, Education with logos, Experience entries, Projects, Awards) and a top toolbar with a download button.
 
 ![Homepage wireframe screenshot](./img/Wireframe.png)
 
