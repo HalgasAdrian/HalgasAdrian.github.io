@@ -35,11 +35,14 @@
             </div>
             <div class="project-details">
               <img src="./img/llms-testbench.png" alt="Placeholder image for LLMs for Automatic Hardware Testbench Generation" class="project-image" />
-              <p>This project explores the use of large language models to automatically generate testbenches for hardware verification. The goal is to reduce manual effort and accelerate the verification process.</p>
-              <h4>Key Objectives</h4>
+              <p>This project implements an automated Verilog testbench generation system using Large Language Models (LLMs). It fine-tunes open-source LLMs to generate functional testbenches for hardware designs described in Verilog HDL.</p>
+              <h4>Features</h4>
               <ul>
-                <li>Automate testbench creation using LLMs.</li>
-                <li>Improve verification efficiency.</li>
+                <li>Automatic testbench generation from Verilog DUT code</li>
+                <li>Fine-tuning pipeline using LoRA/QLoRA for efficiency</li>
+                <li>Comprehensive evaluation metrics (compilation, simulation, coverage)</li>
+                <li>Support for multiple datasets (AutoBench, MG-Verilog, HDLBits)</li>
+                <li>Experiment tracking with Weights & Biases</li>
               </ul>
               <h4>Technical Approach</h4>
               <p>Use transformer‑based models to generate testbench code from hardware specifications and integrate with existing HDL verification frameworks.</p>
@@ -52,11 +55,14 @@
             </div>
             <div class="project-details">
               <img src="./img/adaptive-crowd.png" alt="Placeholder image for Adaptive Crowd Management AI" class="project-image" />
-              <p>An AI system for managing crowd flow in dynamic environments such as events or transportation hubs.</p>
-              <h4>Key Objectives</h4>
+              <p>An AI-based system designed to model, simulate, and predict crowd behavior in emergency situations within virtual environments. The system leverages multi-agent simulations, adaptive pathfinding, emotion analysis, and human-in-the-loop interventions to optimize emergency responses.</p>
+              <h4>Features</h4>
               <ul>
-                <li>Monitor crowd density and movement.</li>
-                <li>Provide adaptive guidance to prevent congestion.</li>
+                <li>Multi-Agent Simulation Framework</li>
+                <li>Adaptive Pathfinding Algorithms</li>
+                <li>Emotion and Panic Level Analysis Using Neural Networks</li>
+                <li>Interactive Human-in-the-Loop Dashboard</li>
+                <li>Data Visualization and Post-Simulation Analytics</li>
               </ul>
               <h4>Technical Approach</h4>
               <p>Combine computer vision with reinforcement learning to manage crowd flow and safety, using simulation environments for training.</p>
@@ -76,14 +82,28 @@
             </div>
             <div class="project-details">
               <img src="./img/clinic-management.png" alt="Placeholder image for Clinic Management System" class="project-image" />
-              <p>This application manages appointments, patient records and billing for small clinics or medical offices.</p>
-              <h4>Key Objectives</h4>
+              <p>The semester project for CS5010 Fall 2024 @ Northeastern University is a fully implemented clinic management system which uses the Model-View-Controller (MVC) design pattern which organizes an application's logic into three components, the model, the view, and the controller. The goal of the three seperate milestones is to implement each portion of the MVC architecture, building upon previous milestone work. Teaching students about writing well thought out code and documentation, along with giving students experience with working on a large scale project.</p>
+              <h4>Features</h4>
               <ul>
-                <li>Enable easy scheduling and patient management.</li>
-                <li>Securely handle medical records and data.</li>
+                <li>Register a new patient</li>
+                <li>Register a new clinical staff member</li>
+                <li>Display information about a specified patient</li>
+                <li>Display information about a specified room</li>
+                <li>Display information about all rooms</li>
+                <li>Assign a patient to a room</li>
+                <li>Assign a clinical staff member to a patient</li>
+                <li>Send a patient home</li>
+                <li>Deactivate a staff member</li>
+                <li>List active staff with current patients</li>
+                <li>List inactive patients</li>
+                <li>Patient visit summary for the past year</li>
+                <li>Unassign clinical staff from a patient</li>
+                <li>List all clinical staff and patient counts</li>
+                <li>Add a new room</li>
+                <li>Exit</li>
               </ul>
               <h4>Technical Approach</h4>
-              <p>Built with a modular front‑end architecture and responsive UI patterns. The backend (not shown here) would use RESTful APIs to manage data.</p>
+              <p>Built with a MVC design pattern.</p>
             </div>
           </article>
           <article class="card project-card" id="project-personal-homepage" data-tags="apps" aria-expanded="false">
