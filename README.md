@@ -49,7 +49,7 @@ User stories translate these personas’ needs into concise requirements. Each s
 
 ### Design Mockups
 
-Design mockups help visualise layout and hierarchy before implementation. Below is a wireframe:
+Design mockups help visualise layout and hierarchy before implementation. Below is a collection of wireframes for the portfolio site, I am using Figma to create my wireframes.:
 
 - **Home page** with a header, a hero section (avatar on the left, introduction text on the right), call‑to‑action buttons (Projects, Contact, GitHub) and a featured projects section with category filter buttons and project cards.
 - **Projects page** with category headings (Machine Learning, Applications, Electrical), a responsive grid of project cards, and an expanded card spanning the full width with an image, long description, objectives, and technical approach.
@@ -58,6 +58,9 @@ Design mockups help visualise layout and hierarchy before implementation. Below 
 ![Homepage wireframe screenshot](./img/Wireframe.png)
 
 ![Projects wireframe screenshot](./img/Wireframeproject.png)
+
+![Resume wireframe screenshot](./img/Wireframeresume.png)
+
 
 ## Technology & Structure
 
