@@ -18,7 +18,7 @@ The project emphasises accessibility, semantic markup, responsive design, and cl
 
 ## Screenshot
 
-Place a screenshot of your homepage at `./img/screenshot.png` and ensure it is committed to the repository.  Then reference it here:
+![Homepage screenshot](./img/screenshot.png)
 
 
 ## Design Document
@@ -72,14 +72,13 @@ Clone the repository and install development dependencies:
 git clone https://github.com/your-username/personal-homepage.git
 cd personal-homepage
 npm install
-
 npm run dev
 # or use VS Code’s Live Server extension
 
 My-Personal-Homepage/
 ├── index.html        # Home page
 ├── projects.html     # Projects listing page
-├── resume.html       # Résumé page
+├── resume.html       # Resume page
 ├── css/
 │   └── styles.css    # Styling for all pages
 ├── js/
@@ -89,9 +88,9 @@ My-Personal-Homepage/
 ├── img/
 │   ├── avatar.png    # Profile photo
 │   ├── [project images and logos]
-│   └── screenshot.png # Add your screenshot here
+│   └── screenshot.png 
 ├── assets/
-│   └── AdrianHalgasResume2026.pdf  # Résumé PDF
+│   └── AdrianHalgasResume2026.pdf  # Resume PDF
 ├── package.json      # Project metadata and scripts
 ├── README.md         # You are reading it
 └── LICENSE           # MIT License
