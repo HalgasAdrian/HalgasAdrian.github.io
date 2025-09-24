@@ -1,11 +1,11 @@
 # Project 1 — Personal Homepage
 
-**Author:** Your Name  
-**Class:** [Course Name & Link]  
+**Author:** Adrian Halgas
+**Class:** CS5610 Web Development
 **Objective:** Build and deploy a personal homepage using vanilla HTML5, CSS3, and ES6 modules.
 
 ## Live Demo
-- **Site:** https://your-username.github.io/project-1-homepage/
+- **Site:** https://halgasadrian.github.io/
 - **Video Demo:** https://…
 
 ## Screenshot
