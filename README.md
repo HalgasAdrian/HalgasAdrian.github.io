@@ -13,7 +13,8 @@ The project emphasises accessibility, semantic markup, responsive design, and cl
 
 ## Live Demo
 
-- **Site:** *[Add your deployment URL here]*
+- **Site:** https://halgasadrian.github.io/
+
 - **Video Demo:** *[Add a link to your narrated demo video]*
 
 ## Screenshot
