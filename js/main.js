@@ -35,9 +35,39 @@ function initTagFilter() {
   );
 }
 
+// Expand/collapse project details on the projects page. Each project card toggles its "expanded" state when clicked.
+// If the page is loaded with a hash corresponding to a project ID, that project will be automatically expanded and scrolled into view.
+function initProjectExpand() {
+  const cards = document.querySelectorAll('.project-card');
+  if (!cards.length) return;
+  cards.forEach((card) => {
+    card.addEventListener('click', (event) => {
+      // Prevent toggling when clicking links inside the card
+      if (event.target && event.target.closest('a')) return;
+      const expanded = card.classList.toggle('expanded');
+      card.setAttribute('aria-expanded', expanded);
+    });
+  });
+
+  // Auto-expand based on location hash
+  if (window.location.hash) {
+    const id = window.location.hash.slice(1);
+    const target = document.getElementById(id);
+    if (target && target.classList.contains('project-card')) {
+      target.classList.add('expanded');
+      target.setAttribute('aria-expanded', 'true');
+      // Scroll into view after a short delay to ensure layout is ready
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  }
+}
+
 function init() {
   initThemeToggle();
   initYear();
   initTagFilter();
+  initProjectExpand();
 }
 init();
