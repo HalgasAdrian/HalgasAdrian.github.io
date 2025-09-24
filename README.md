@@ -55,8 +55,7 @@ Design mockups help visualise layout and hierarchy before implementation. Below 
 - **Projects page** with category headings (Machine Learning, Applications, Electrical), a responsive grid of project cards, and an expanded card spanning the full width with an image, long description, objectives, and technical approach.
 - **Résumé page** with clear sections (Summary, Skills chips, Education with logos, Experience entries, Projects, Awards) and a top toolbar with a download button.
 
-Create your wireframe images using your preferred tool (e.g., hand‑drawn sketch, Figma) and save them in `./img/`.  Then reference them here, for example:
-
+![Homepage wireframe screenshot](./img/Wireframe.png)
 
 ## Technology & Structure
 
