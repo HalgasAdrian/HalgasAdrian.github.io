@@ -64,8 +64,10 @@ Create your wireframe images using your preferred tool (e.g., hand‑drawn sketc
 - **CSS:** modern layout with Flexbox and CSS Grid; responsive media queries; CSS custom properties for theme variables; no `!important` flags.
 - **JavaScript:** ES6 modules organised under `/js`; `main.js` handles theme toggling, date updates, tag filtering and project expansion, no external frameworks or jQuery.
 - **Folder organisation:** assets are stored in `/img` (images and logos), `/css` (styles), `/js` (scripts), and `/assets` (PDF resume).
+## AI Use
 
 ## Getting Started
+This project was developed with the assistance of ChatGPT 5 in agent mode. The model provided guidance on implementing and debugging the interactive Projects page. In particular, ChatGPT helped design the expandable project cards, ensuring only one card expands at a time and that the expanded card spans the full grid to accommodate a photo. It also offered suggestions for organising files, writing semantic HTML, and updating the dark/light mode toggle. All original code remains handcrafted and reviewed.
 
 Clone the repository and install development dependencies:
 
