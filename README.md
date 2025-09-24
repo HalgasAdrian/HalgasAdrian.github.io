@@ -57,6 +57,8 @@ Design mockups help visualise layout and hierarchy before implementation. Below 
 
 ![Homepage wireframe screenshot](./img/Wireframe.png)
 
+![Projects wireframe screenshot](./img/Wireframeproject.png)
+
 ## Technology & Structure
 
 - **HTML:** semantic elements (header, nav, main, section, article, footer) and accessible ARIA attributes; multiple pages (`index.html`, `projects.html`, `resume.html`).
