@@ -141,7 +141,7 @@ body.site {
   padding-bottom: 0.35rem;
 }
 
-/* NEW: subheadings for Graduate/Undergraduate */
+/* Subheadings for Graduate/Undergraduate */
 .resume__subheading {
   margin-top: 1.25rem;
   font-size: 1.05rem;
@@ -197,7 +197,7 @@ body.site {
   border-radius: 999px;
 }
 
-/* Optional link accent inside resume content */
+/* Link accent inside resume content */
 .resume__link {
   color: var(--accent);
   text-decoration: none;
