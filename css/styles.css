@@ -230,9 +230,12 @@ body.site {
 
 /* When a project card is expanded, make it span the full width of the grid. This provides more
    space for additional information and a photo to comfortably fit inside each project. */
+/* New */
 .project-card.expanded {
   grid-column: 1 / -1;
+  margin-bottom: 1.5rem; /* Prevent overlapping and add breathing room */
 }
+
 
 /* Project images inside the expanded details. Each project can include a single photo with this
    class. The image scales to the width of its container and preserves its aspect ratio. */
