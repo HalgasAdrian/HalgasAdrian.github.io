@@ -7,7 +7,9 @@
     <!-- Required meta -->
     <meta name="author" content="Adrian Halgas" />
     <meta name="description" content="Personal homepage of Adrian Halgas — projects, resume, and contact info." />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="./favicon.ico" /> <!-- Comment:
+This path is root-relative ("/favicon.ico"). If deployed via GitHub Pages, this may not resolve correctly.
+Use a relative path: "./favicon.ico". -->
 
     <title>Adrian Halgas — Home</title>
     <link rel="preload" href="./css/styles.css" as="style" />
@@ -15,7 +17,7 @@
   </head>
   <body class="site">
     <header class="site__header container">
-      <a class="brand" href="/">Adrian Halgas<span class="brand__dot"></span></a>
+      <a class="brand" href="index.html">Adrian Halgas<span class="brand__dot"></span></a> <!-- Use index.html instead of "/" so links resolve correctly in GitHub Pages deployment. -->
       <nav aria-label="Primary" class="nav">
         <a class="nav__link" href="/">Home</a>
         <a class="nav__link" href="/projects.html">Projects</a>
@@ -28,7 +30,9 @@
 
     <main class="container">
       <section class="hero">
-        <img class="hero__avatar" src="./img/avatar.png" alt="Portrait of Adrian" />
+       <img class="hero__avatar" src="./img/avatar.png" alt="Portrait of Adrian"
+     width="120" height="120" loading="lazy" />
+<!-- Added width/height to prevent layout shift, and loading="lazy" for performance. -->
         <div>
           <h1>Hello, I’m <span class="accent">Adrian Halgas</span></h1>
           <p class="lead">
@@ -61,6 +65,14 @@
               <p class="card__desc">A machine learning project exploring how large language models can automate the generation of hardware testbenches.</p>
             </a>
           </li>
+
+     <!-- Comment:
+         Cards are wrapped in <ul> but without <li> role semantics (you styled them as .card but forgot <li role="listitem"> if keeping list semantics).
+         Either:
+          - Keep <ul>/<li> semantic and ensure ARIA roles are correct,
+          - Or use <div class="grid"> instead for layout only. -->
+
+          
           <li class="card" data-tags="ml">
             <a class="card__link" href="/projects.html#project-adaptive-crowd">
               <h3 class="card__title">Adaptive Crowd Management AI</h3>
