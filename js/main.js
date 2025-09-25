@@ -28,7 +28,11 @@ function initTagFilter() {
       t.classList.add("is-active");
       const tag = t.dataset.tag;
       [...grid.children].forEach((card) => {
-        const itemTags = (card.getAttribute("data-tags") || "").split(/\s+/);
+       // New
+const itemTags = (card.getAttribute("data-tags") || "")
+  .split(/\s+/)
+  .filter(Boolean);
+// Filtered out empty strings so tag filtering logic doesn’t break.
         card.style.display = tag === "all" || itemTags.includes(tag) ? "" : "none";
       });
     }),
