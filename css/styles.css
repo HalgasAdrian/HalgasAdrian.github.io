@@ -63,7 +63,13 @@ body.site {
 
 .nav { display: flex; gap: .75rem; align-items: center; }
 .nav__link { color: var(--muted); text-decoration: none; padding: .25rem .5rem; border-radius: .5rem; }
-.nav__link:hover, .nav__link.is-active { color: var(--fg); background: color-mix(in oklab, var(--accent) 17%, transparent); }
+/* New */
+.nav__link:hover, .nav__link.is-active {
+  color: var(--fg);
+  background: rgba(10, 132, 255, 0.15); /* Fallback for Safari */
+  background: color-mix(in oklab, var(--accent) 17%, transparent);
+}
+/* Added fallback for color-mix() which isn’t fully supported in Safari. */
 
 .button {
   border: 1px solid var(--border); background: var(--card);
