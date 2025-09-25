@@ -73,6 +73,9 @@ This project was developed with the assistance of ChatGPT 5 in agent mode. The 
 ChatGPT helped design the expandable project cards, ensuring only one card expands at a time and that the expanded card spans the full grid to accommodate a photo. It also offered suggestions 
 for organising files, writing semantic HTML, and updating the dark/light mode toggle. All original code remains handcrafted and reviewed.
 
+Code Review 
+Great job, Adrian! Your site looks really polished and I love the creative touches like the theme toggle and project filtering. Just a couple of small fixes with links and accessibility, but overall this is a really strong project.
+
 ## Getting Started
 
 Clone the repository and install development dependencies:
@@ -103,3 +106,4 @@ My-Personal-Homepage/
 ├── package.json      # Project metadata and scripts
 ├── README.md         # You are reading it
 └── LICENSE           # MIT License
+
