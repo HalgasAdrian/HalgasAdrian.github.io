@@ -78,7 +78,7 @@ for organising files, writing semantic HTML, and updating the dark/light mode to
 Clone the repository and install development dependencies:
 
 ```bash
-git clone https://github.com/your-username/personal-homepage.git  
+git clone https://github.com/your-username/personal-homepage.git  // Instead of Your- Username , You could add your git link
 cd personal-homepage
 npm install
 npm run dev
