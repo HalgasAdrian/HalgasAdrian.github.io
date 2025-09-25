@@ -76,7 +76,13 @@ function initProjectExpand() {
       target.setAttribute('aria-expanded', 'true');
       // Scroll into view after a short delay to ensure layout is ready
       setTimeout(() => {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // New
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+} else {
+  target.scrollIntoView();
+}
+// Added reduced-motion safeguard for accessibility compliance.
       }, 100);
     }
   }
