@@ -7,7 +7,9 @@
     <!-- Required meta -->
     <meta name="author" content="Adrian Halgas" />
     <meta name="description" content="Personal homepage of Adrian Halgas — projects, resume, and contact info." />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" /> <!-- Comment:
+This path is root-relative ("/favicon.ico"). If deployed via GitHub Pages, this may not resolve correctly.
+Use a relative path: "./favicon.ico". -->
 
     <title>Adrian Halgas — Home</title>
     <link rel="preload" href="./css/styles.css" as="style" />
@@ -61,6 +63,14 @@
               <p class="card__desc">A machine learning project exploring how large language models can automate the generation of hardware testbenches.</p>
             </a>
           </li>
+
+     <!-- Comment:
+         Cards are wrapped in <ul> but without <li> role semantics (you styled them as .card but forgot <li role="listitem"> if keeping list semantics).
+         Either:
+          - Keep <ul>/<li> semantic and ensure ARIA roles are correct,
+          - Or use <div class="grid"> instead for layout only. -->
+
+          
           <li class="card" data-tags="ml">
             <a class="card__link" href="/projects.html#project-adaptive-crowd">
               <h3 class="card__title">Adaptive Crowd Management AI</h3>
