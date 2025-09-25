@@ -17,7 +17,7 @@ Use a relative path: "./favicon.ico". -->
   </head>
   <body class="site">
     <header class="site__header container">
-      <a class="brand" href="/">Adrian Halgas<span class="brand__dot"></span></a>
+      <a class="brand" href="index.html">Adrian Halgas<span class="brand__dot"></span></a> <!-- Use index.html instead of "/" so links resolve correctly in GitHub Pages deployment. -->
       <nav aria-label="Primary" class="nav">
         <a class="nav__link" href="/">Home</a>
         <a class="nav__link" href="/projects.html">Projects</a>
@@ -30,7 +30,9 @@ Use a relative path: "./favicon.ico". -->
 
     <main class="container">
       <section class="hero">
-        <img class="hero__avatar" src="./img/avatar.png" alt="Portrait of Adrian" />
+       <img class="hero__avatar" src="./img/avatar.png" alt="Portrait of Adrian"
+     width="120" height="120" loading="lazy" />
+<!-- Added width/height to prevent layout shift, and loading="lazy" for performance. -->
         <div>
           <h1>Hello, I’m <span class="accent">Adrian Halgas</span></h1>
           <p class="lead">
